@@ -1,0 +1,87 @@
+.container {
+  display: grid;
+  grid-template-rows: 100px 400px 200px 30px;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-areas:
+  "hd"
+  "sd"
+  "pj"
+  "ft";
+  border: 5px solid lightgrey;
+
+}
+
+.box {
+  width: 100%;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 3px;
+  text-align: center;
+}
+
+  .header {
+  background-color: rgb(105,105,105);
+  grid-area: hd;
+  }
+
+  .subheader {
+  background-color: rgb(160,160,160);
+  grid-area: sd;
+  }
+
+  .projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(220,220,220);
+  }
+
+  #pja {
+  grid-area: pjone;
+  }
+
+  #pjb {
+  grid-area: pjtwo;
+  }
+
+  #pjc {
+  grid-area: pjthree;
+  }
+
+  .footer {
+  background-color: rgb(105,105,105);
+  grid-area: ft;
+  }
+
+  .description {
+  width: auto;
+  height: auto;
+  background-color: rgb(160,160,160);
+  }
+  .project1img {
+  width: 300px;
+  height: 150px;
+  background-image: url("image.jpg");
+  background-size: contain;
+  }
+
+  .project2img {
+  width: 300px;
+  height: 150px;
+  background-image: url("frakes.jpg");
+  background-size: contain;
+  }
+
+
+@media(min-width: 600px){
+  .container {
+    display: grid;
+    grid-template-rows: 60px 40px 300px 30px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-areas:
+    "hd hd hd"
+    "sd sd sd"
+    "pjone pjtwo pjthree"
+    "ft ft ft";
+}
+}
